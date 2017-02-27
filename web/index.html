@@ -1,0 +1,102 @@
+<html>
+<head>
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+  <!-- Optional theme -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <link rel="stylesheet" href="./datepicker/css/datepicker.css">
+  <!-- Latest compiled and minified JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  <script src="./datepicker/js/bootstrap-datepicker.js"></script>
+</head>
+<body>
+  <nav class="navbar navbar-default">
+    <div class="container-fluid">
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="#">Brand</a>
+      </div>
+
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav">
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Menu <span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="#">Live</a></li>
+              <li><a href="#">See my contracts</a></li>
+              <li role="separator" class="divider"></li>
+              <li><a href="#">Rent my car</a></li>
+              <li><a href="#">Check cars nearby</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div><!-- /.navbar-collapse -->
+    </div><!-- /.container-fluid -->
+  </nav>
+      <div class="row">
+        <div class="col-md-2"></div>
+        <div class="col-md-8">
+          <h1> Rent a car</h1>
+          <form>
+            <h3>Select car:</h3>
+            <div class="form-group">
+              <select class="form-control">
+                <option value="volvo">Ferrari (Maria)</option>
+                <option value="saab">Golf (Juan)</option>
+                <option value="opel">Ibiza (Laura)</option>
+                <option value="audi">Mini (Mark)</option>
+              </select>
+            </div>
+            <div class="form-group" data-date="12-02-2012" data-date-format="dd-mm-yyyy">
+              <h3>From: </h3> <input class="form-control" id="dp1" type="text" value="12-02-2012">
+              <h3>To: </h3> <input class="form-control"  id="dp2" type="text" value="12-02-2012">
+            </div>
+            <center><button type="submit" class="btn btn-default">Send request</button></center>
+          </form>
+
+        </div>
+        <div class="col-md-2"></div>
+      </div>
+</body>
+
+<script>
+$('#dp1').datepicker();
+$('#dp2').datepicker();
+
+  var nowTemp = new Date();
+  var now = new Date(nowTemp.getFullYear(), nowTemp.getMonth(), nowTemp.getDate(), 0, 0, 0, 0);
+
+  var checkin = $('#dpd1').datepicker({
+    onRender: function(date) {
+      return date.valueOf() < now.valueOf() ? 'disabled' : '';
+    }
+  }).on('changeDate', function(ev) {
+    if (ev.date.valueOf() > checkout.date.valueOf()) {
+      var newDate = new Date(ev.date)
+      newDate.setDate(newDate.getDate() + 1);
+      checkout.setValue(newDate);
+    }
+    checkin.hide();
+    $('#dpd2')[0].focus();
+  }).data('datepicker');
+  var checkout = $('#dpd2').datepicker({
+    onRender: function(date) {
+      return date.valueOf() <= checkin.date.valueOf() ? 'disabled' : '';
+    }
+  }).on('changeDate', function(ev) {
+    checkout.hide();
+  }).data('datepicker');
+
+</script>
+
+
+</html>

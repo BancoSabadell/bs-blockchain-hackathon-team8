@@ -1,0 +1,20 @@
+[
+  {
+    "id": "maria",
+    "name": "Maria Garcia",
+    "score": 0.91,
+    "blockchain": {
+      "address": "0x705a5d48de313b00cf65ceee276f167fd8017542",
+      "password": "rx7Tagv5"
+    }
+  },
+  {
+    "id": "joan",
+    "name": "Joan Torres",
+    "score": 1.27,
+    "blockchain": {
+      "address": "0xe6493188200f4609f7381f8a2fb46a7838b2633f",
+      "password": "ad4HnmMW"
+    }
+  }
+]
