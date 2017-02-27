@@ -14,6 +14,7 @@ let router = Router().loadMethods()
 router.get('/', require('./functions/main.js'))
 router.get('/cars', require('./functions/cars.js'))
 router.get('/pending', require('./functions/pending.js'))
+router.post('/estimate', require('./functions/estimation.js'))
 
 app.use(router.middleware())
 app.listen(3000)
