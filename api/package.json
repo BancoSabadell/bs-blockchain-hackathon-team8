@@ -30,7 +30,9 @@
     "koa-better-router": "^2.1.1",
     "moment": "^2.17.1",
     "koa-bodyparser": "^4.0.0",
-    "web3": "^0.18.2"
+    "web3": "^0.18.2",
+    "solc": "^0.4.6",
+    "contract-deployer": "^1.0.0"
   },
   "devDependencies": {
     "nodemon": "^1.11.0",
