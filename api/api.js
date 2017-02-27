@@ -13,6 +13,7 @@ let router = Router().loadMethods()
 
 router.get('/', require('./functions/main.js'))
 router.get('/cars', require('./functions/cars.js'))
+router.get('/pending', require('./functions/pending.js'))
 
 app.use(router.middleware())
 app.listen(3000)
