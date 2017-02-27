@@ -1,3 +1,3 @@
 module.exports = exports = function (ctx) {
-  ctx.body = 'Hello world'
+  console.log(ctx.request.body)
 }
