@@ -1,11 +1,26 @@
-[{
-  "id": "mercedes",
-  "name": "Mercedes Clase A",
-  "type": "Intermedio (IDAR)",
-  "attributes": {
-    "seats": 5,
-    "bags": 3,
-    "doors": 5,
-    "hasAC": true
+[
+  {
+    "id": "mercedes",
+    "name": "Mercedes Clase A",
+    "type": "Intermedio (IDAR)",
+    "owner": "joan",
+    "attributes": {
+      "seats": 5,
+      "bags": 3,
+      "doors": 5,
+      "hasAC": true
+    }
+  },
+  {
+    "id": "ferrari",
+    "name": "Ferrari California T",
+    "type": "Convertible",
+    "owner": "maria",
+    "attributes": {
+      "seats": 2,
+      "bags": 1,
+      "doors": 2,
+      "hasAC": false
+    }
   }
-}]
+]
