@@ -3,8 +3,9 @@ const personas = require('../data/personas')
 const moment = require('moment')
 
 module.exports = exports = function (ctx) {
-  let from = moment(ctx.response.body.from)
-  let to = moment(ctx.response.body.to)
+  console.log(ctx.request)
+  let from = moment(ctx.request.body.from)
+  let to = moment(ctx.request.body.to)
   let hours = to.diff(from, 'hours')
 
   let car = cars.find(car => {
@@ -15,7 +16,7 @@ module.exports = exports = function (ctx) {
     return persona === ctx.request.body.user
   })
 
-  let price = car.basePrice * renter.score * hours
+  let price = car.rentalPrice * (car.insuranceBase * renter.score) * hours
 
   ctx.body = {
     from: from,

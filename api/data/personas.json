@@ -2,11 +2,13 @@
   {
     "id": "maria",
     "name": "Maria Garcia",
-    "ownedCar": "ferrari"
+    "ownedCar": "ferrari",
+    "score": 0.9
   },
   {
     "id": "joan",
     "name": "Joan Torres",
-    "ownedCar": "mercedes"
+    "ownedCar": "mercedes",
+    "score": 1.2
   }
 ]

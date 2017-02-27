@@ -4,6 +4,8 @@
     "name": "Mercedes Clase A",
     "type": "Intermedio (IDAR)",
     "owner": "joan",
+    "insuranceBase": 0.91,
+    "rentalPrice": 0.5,
     "attributes": {
       "seats": 5,
       "bags": 3,
@@ -16,6 +18,8 @@
     "name": "Ferrari California T",
     "type": "Convertible",
     "owner": "maria",
+    "insuranceBase": 1.27,
+    "rentalPrice": 1.0,
     "attributes": {
       "seats": 2,
       "bags": 1,
