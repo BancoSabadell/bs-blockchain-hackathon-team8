@@ -1,4 +1,4 @@
-{
+[{
   "id": "mercedes",
   "name": "Mercedes Clase A",
   "type": "Intermedio (IDAR)",
@@ -8,4 +8,4 @@
     "doors": 5,
     "hasAC": true
   }
-}
+}]
