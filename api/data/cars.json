@@ -7,5 +7,10 @@
     "bags": 3,
     "doors": 5,
     "hasAC": true
+  },
+  "blockchain": {
+    "contract": "0xf54154f214ec96239820cc808f535ef8f836238f",
+    "address": "0xece6b3a0ed3a84cc298366b87b9f877778891a24",
+    "password": "KbbnOVFb"
   }
 }]
