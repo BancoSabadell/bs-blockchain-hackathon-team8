@@ -1,1 +1,5 @@
-{"name":"Maria Garcia","ownedCar":"mercedes"}
+{
+  "id": "maria",
+  "name": "Maria Garcia",
+  "ownedCar": "mercedes"
+}
