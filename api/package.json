@@ -32,8 +32,6 @@
   },
   "devDependencies": {
     "nodemon": "^1.11.0",
-    "standard": "^8.6.0",
-    "tap": "^10.2.2",
-    "tape": "^4.6.3"
+    "standard": "^8.6.0"
   }
 }
