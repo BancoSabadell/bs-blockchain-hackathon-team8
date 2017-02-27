@@ -1,0 +1,10 @@
+{
+  "name": "Mercedes Clase A",
+  "type": "Intermedio (IDAR)",
+  "attributes": {
+    "seats": 5,
+    "bags": 3,
+    "doors": 5,
+    "hasAC": true
+  }
+}

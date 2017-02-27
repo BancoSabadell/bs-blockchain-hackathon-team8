@@ -1,0 +1,38 @@
+{
+  "name": "p2p-car-sharing-api",
+  "description": "Blockchain car sharing app",
+  "version": "0.0.1",
+  "scripts": {
+    "start": "nodemon api.js",
+    "codestyle": "standard --fix"
+  },
+  "maintainers": [
+    {
+      "name": "Patrick Heneise",
+      "email": "patrick@blended.io",
+      "web": "http://blended.io"
+    }
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/BancoSabadell/bs-blockchain-hackathon-team8"
+  },
+  "licenses": [
+    {
+      "name": "Apache v2",
+      "url": "https://www.apache.org/licenses/LICENSE-2.0.html"
+    }
+  ],
+  "dependencies": {
+    "dotenv": "^4.0.0",
+    "koa": "^2.0.1",
+    "koa-better-router": "^2.1.1",
+    "web3": "^0.18.2"
+  },
+  "devDependencies": {
+    "nodemon": "^1.11.0",
+    "standard": "^8.6.0",
+    "tap": "^10.2.2",
+    "tape": "^4.6.3"
+  }
+}
