@@ -1,3 +1,4 @@
 module.exports = exports = function (ctx) {
-  console.log(ctx.request.body)
+  let car = ctx.request.body.car
+  let user = ctx.request.body.user
 }
